@@ -4,3 +4,7 @@ server:
 spring:
   application:
     name: catalog
+
+catalog:
+  ribbon:
+    listOfServers: localhost:8082
