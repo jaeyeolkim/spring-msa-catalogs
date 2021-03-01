@@ -5,6 +5,14 @@ spring:
   application:
     name: catalog
 
+# rebbon 테스트 후 eureka client 적용으로 불필요하여 주석처리 함
 catalog:
   ribbon:
-    listOfServers: localhost:8082
+#    listOfServers: localhost:8082
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka # default address
